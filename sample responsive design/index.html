@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Responsive Cards</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Pxlziee</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="foto.html">Photography</a></li>
+                <li><a href="foto_edit.html">Photo Editing</a></li>
+                <li><a href="video_edit.html">Video Editing</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <header>
         <h1 class="title">My Portfolio</h1>
     </header>
 
     <section class="card-container">
-        <div class="card">
-            <img src="fp.jpeg" alt="Photography">
+        <a href="foto.html" class="card">
+            <img src="images/fp.jpeg" alt="Photography">
             <h2>Photography</h2>
-            <p>Capturing beautiful moments through my lens.</p>
-        </div>
-        <div class="card">
-            <img src="2.jpg" alt="Photo Editing">
+            <p>Capturing beautiful moment through my lens</p>
+        </a>
+
+        <a href="foto_edit.html" class="card">
+            <img src="images/2.jpg" alt="Photo Editing">
             <h2>Photo Editing</h2>
-            <p>Editing photos to bring out the best in every shot.</p>
-        </div>
-        <div class="card">
-            <img src="3.jpg" alt="Video Editing">
+            <p>Editing photos to bring out the best in every moment</p>
+        </a>
+
+        <a href="video_edit.html" class="card">
+            <img src="images/3.jpg" alt="Editing Video">
             <h2>Video Editing</h2>
-            <p>Crafting stories through creative video edits.</p>
-        </div>
+            <p>Crafting stories through creative video editing</p>
+        </a>
     </section>
 
 </body>

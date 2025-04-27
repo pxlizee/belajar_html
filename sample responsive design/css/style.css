@@ -1,0 +1,232 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.title {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Card Style */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 16px;
+    padding: 0 15px 20px;
+    color: #666;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.photo-gallery .card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.photo-gallery .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.photo-gallery .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.photo-gallery .card h2 {
+    font-size: 24px;
+    padding: 0 15px 20px;
+    color: #666;
+}
+
+/* Before-After Section */
+.before-after {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.before-after img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.before-after img:hover {
+    transform: scale(1.05);
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.video-section iframe,
+.video-section video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-section iframe:hover,
+.video-section video:hover {
+    transform: scale(1.03);
+}
+
+.video-description {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .card-container, .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container, .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
